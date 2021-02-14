@@ -41,8 +41,8 @@ void loop() {
     }
   else
     {
-      digitalWrite(led,HIGH);   //jump here if ppm is not greater than threshold and turn off LED
-      digitalWrite(buz,HIGH);   //Turn off Buzzer
+      digitalWrite(led,LOW);   //jump here if ppm is not greater than threshold and turn off LED
+      digitalWrite(buz,LOW);   //Turn off Buzzer
       lcd.setCursor(1,1);
       lcd.print ("AQ Level Good");
       Serial.println("AQ Level Good");
